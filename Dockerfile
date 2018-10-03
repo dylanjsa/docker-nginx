@@ -6,7 +6,7 @@ ENV PCRE_VERSION 8.41
 ENV ZLIB_VERSION 1.2.11
 
 RUN apt-get update && \
-    apt-get install -y make g++ libssl-dev libxslt-dev libgd2-xpm-dev libgeoip-dev libpam-dev && \
+    apt-get install -y make g++ libssl-dev libxslt-dev libgd2-xpm-dev libgeoip-dev libpam-dev wget vim && \
     cd /opt && \
     wget http://nginx.org/download/nginx-$NGINX_VERSION.tar.gz && \
     tar xfz nginx-$NGINX_VERSION.tar.gz && \
